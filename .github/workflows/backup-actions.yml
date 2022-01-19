@@ -9,6 +9,6 @@ jobs:
         env:
           PUSH_ALL_REFS: "false"
         with:
-          REMOTE: git@github.com/mahdiiix/CICD_test.git
+          REMOTE: git@github.com:mahdiiix/CICD_test.git
           GIT_SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           GIT_SSH_NO_VERIFY_HOST: "true"

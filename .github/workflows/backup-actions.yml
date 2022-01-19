@@ -9,6 +9,6 @@ jobs:
         env:
           PUSH_ALL_REFS: "false"
         with:
-          REMOTE: git@github.com:mahdiiix/CICD_test
+          REMOTE: https://github.com/mahdiiix/CICD_test.git
           GIT_USERNAME: mahdiiix
           GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}

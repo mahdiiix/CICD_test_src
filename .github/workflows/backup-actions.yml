@@ -1,0 +1,14 @@
+name: backup-actions
+on: [push]
+jobs:
+  git-mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git-mirror-2
+        uses: TheTipsyTurtle/mirror-action@master
+        env:
+          PUSH_ALL_REFS: "false"
+        with:
+          REMOTE: git@github.com:mahdiiix/CICD_test
+          GIT_USERNAME: mahdiiix
+          GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
